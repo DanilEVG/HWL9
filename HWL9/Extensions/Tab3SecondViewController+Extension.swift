@@ -6,3 +6,8 @@
 //
 
 import Foundation
+extension Tab3SecondViewController: Tab3ThirdViewControllerDelegate {
+    func usernameHasBeenUpdated(to username: String) {
+        delegate?.usernameHasBeenUpdated(to: username)
+    }
+}

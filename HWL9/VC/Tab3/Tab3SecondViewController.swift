@@ -7,23 +7,31 @@
 
 import UIKit
 
-class Tab3SecondViewController: UIViewController {
+protocol Tab3SecondViewControllerDelegate: AnyObject {
+    func usernameHasBeenUpdated(to username: String)
+}
 
+class Tab3SecondViewController: UIViewController {
+    var textForTextField = ""
+    weak var delegate: Tab3SecondViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab3SecondScreenNextTapped(_ sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Tab3ThirdViewController") as?  Tab3ThirdViewController else {return}
+        
+        nextVC.textForTextField = textForTextField
+        
+        nextVC.delegate = self
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    */
+    
+ 
 
 }
+

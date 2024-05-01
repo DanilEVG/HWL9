@@ -7,23 +7,23 @@
 
 import UIKit
 
+
+
 class Tab2SecondViewController: UIViewController {
 
+    @IBOutlet weak var tab2SecondScreenTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab2SecondScreenButtonTapped(_ sender: UIButton) {
+        UsernameContainer.shared.username = tab2SecondScreenTextField.text ?? ""
+        
+        dismiss(animated: true)
     }
-    */
+    
 
 }

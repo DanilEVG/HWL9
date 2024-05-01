@@ -7,23 +7,29 @@
 
 import UIKit
 
-class Tab3FifthViewController: UIViewController {
+protocol Tab3FifthViewControllerDelegate: AnyObject {
+    func usernameHasBeenUpdated(to username: String)
+}
 
+class Tab3FifthViewController: UIViewController {
+    
+    @IBOutlet weak var tab3FifthScreenTextField: UITextField!
+    
+    weak var delegate: Tab3FifthViewControllerDelegate?
+    var textForTextField = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tab3FifthScreenTextField.text = textForTextField
+    }
+    
+    @IBAction func tab3FifthScreenGoToFirstScreenTapped(_ sender: UIButton) {
+        delegate?.usernameHasBeenUpdated(to: tab3FifthScreenTextField.text ?? "")
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+

@@ -7,13 +7,20 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class Tab1FirstViewController: UIViewController {
 
+    @IBOutlet weak var tab1FirstScreenLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tab1FirstScreenLabel.text = "Hello, \(UsernameContainer.shared.username)"
+    }
 
 }

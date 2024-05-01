@@ -6,3 +6,8 @@
 //
 
 import Foundation
+class UsernameContainer {
+    static var shared = UsernameContainer()
+    var username = ""
+    private init() {}
+}

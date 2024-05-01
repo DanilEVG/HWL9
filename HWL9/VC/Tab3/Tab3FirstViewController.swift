@@ -8,22 +8,25 @@
 import UIKit
 
 class Tab3FirstViewController: UIViewController {
+    
 
+    @IBOutlet weak var tab3FirstScreenTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab3FirstScreenNextTapped(_ sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Tab3SecondViewController") as?  Tab3SecondViewController else {return}
+        
+        nextVC.textForTextField = tab3FirstScreenTextField.text ?? ""
+        
+        nextVC.delegate = self
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    */
-
 }
+
+
+

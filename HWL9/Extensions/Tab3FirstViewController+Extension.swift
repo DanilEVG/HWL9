@@ -6,3 +6,8 @@
 //
 
 import Foundation
+extension Tab3FirstViewController: Tab3SecondViewControllerDelegate {
+    func usernameHasBeenUpdated(to username: String) {
+        tab3FirstScreenTextField.text = username
+    }
+}

@@ -9,21 +9,23 @@ import UIKit
 
 class Tab4FifthViewController: UIViewController {
 
+    @IBOutlet weak var tab4FifthScreenTextField: UITextField!
+    var textForTextField = ""
+    var usernameChanged: (String) -> Void = { _ in }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tab4FifthScreenTextField.text = textForTextField
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab4FifthScreenGoToFirstScreenTapped(_ sender: UIButton) {
+        
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    */
+    
+    @IBAction func tab4FifthScreenTextFieldChanged(_ sender: UITextField) {
+        usernameChanged(tab4FifthScreenTextField.text ?? "")
+    }
+    
 
 }

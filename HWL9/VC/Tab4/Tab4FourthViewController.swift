@@ -8,22 +8,23 @@
 import UIKit
 
 class Tab4FourthViewController: UIViewController {
-
+    var textForTextField = ""
+    var usernameChanged: (String) -> Void = { _ in }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab4FourthScreenNextTapped(_ sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Tab4FifthViewController") as?  Tab4FifthViewController else {return}
+        nextVC.usernameChanged = {[weak self] newValue in
+            self?.usernameChanged(newValue)
+        }
+        nextVC.textForTextField = textForTextField
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    */
+    
+
 
 }

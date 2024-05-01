@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		7DCF62BB2BE0D1980002FA79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62BA2BE0D1980002FA79 /* AppDelegate.swift */; };
 		7DCF62BD2BE0D1980002FA79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62BC2BE0D1980002FA79 /* SceneDelegate.swift */; };
-		7DCF62BF2BE0D1980002FA79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62BE2BE0D1980002FA79 /* ViewController.swift */; };
 		7DCF62C22BE0D1980002FA79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7DCF62C12BE0D1980002FA79 /* Base */; };
 		7DCF62C42BE0D1990002FA79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCF62C32BE0D1990002FA79 /* Assets.xcassets */; };
 		7DCF62C72BE0D1990002FA79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7DCF62C62BE0D1990002FA79 /* Base */; };
+		7DCF62D42BE0E5D30002FA79 /* Tab1FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62D32BE0E5D30002FA79 /* Tab1FirstViewController.swift */; };
+		7DCF62D62BE0E64F0002FA79 /* Tab2FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62D52BE0E64F0002FA79 /* Tab2FirstViewController.swift */; };
+		7DCF62D82BE0E68D0002FA79 /* Tab2SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62D72BE0E68D0002FA79 /* Tab2SecondViewController.swift */; };
+		7DCF62DA2BE0E6ED0002FA79 /* Tab3FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62D92BE0E6ED0002FA79 /* Tab3FirstViewController.swift */; };
+		7DCF62DC2BE0E7260002FA79 /* Tab3SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62DB2BE0E7260002FA79 /* Tab3SecondViewController.swift */; };
+		7DCF62DE2BE0E7750002FA79 /* Tab3ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62DD2BE0E7750002FA79 /* Tab3ThirdViewController.swift */; };
+		7DCF62E02BE0E7C10002FA79 /* Tab3FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62DF2BE0E7C10002FA79 /* Tab3FourthViewController.swift */; };
+		7DCF62E22BE0E8080002FA79 /* Tab3FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62E12BE0E8080002FA79 /* Tab3FifthViewController.swift */; };
+		7DCF62E42BE0E8490002FA79 /* Tab4FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62E32BE0E8490002FA79 /* Tab4FirstViewController.swift */; };
+		7DCF62E62BE0E8780002FA79 /* Tab4SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62E52BE0E8770002FA79 /* Tab4SecondViewController.swift */; };
+		7DCF62E82BE0E8A50002FA79 /* Tab4ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62E72BE0E8A50002FA79 /* Tab4ThirdViewController.swift */; };
+		7DCF62EA2BE0E8D60002FA79 /* Tab4FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62E92BE0E8D60002FA79 /* Tab4FourthViewController.swift */; };
+		7DCF62EC2BE0E90D0002FA79 /* Tab4FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62EB2BE0E90D0002FA79 /* Tab4FifthViewController.swift */; };
+		7DCF62EE2BE0F00B0002FA79 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62ED2BE0F00B0002FA79 /* TabBarController.swift */; };
+		7DCF62F12BE22CF30002FA79 /* UsernameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62F02BE22CF30002FA79 /* UsernameContainer.swift */; };
+		7DCF62F42BE22F420002FA79 /* Tab3FirstViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62F32BE22F420002FA79 /* Tab3FirstViewController+Extension.swift */; };
+		7DCF62F62BE22F8D0002FA79 /* Tab3SecondViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62F52BE22F8D0002FA79 /* Tab3SecondViewController+Extension.swift */; };
+		7DCF62F82BE22FDB0002FA79 /* Tab3ThirdViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62F72BE22FDB0002FA79 /* Tab3ThirdViewController+Extension.swift */; };
+		7DCF62FA2BE230130002FA79 /* Tab3FourthViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCF62F92BE230130002FA79 /* Tab3FourthViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7DCF62B72BE0D1980002FA79 /* HWL9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWL9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCF62BA2BE0D1980002FA79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DCF62BC2BE0D1980002FA79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7DCF62BE2BE0D1980002FA79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DCF62C12BE0D1980002FA79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DCF62C32BE0D1990002FA79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DCF62C62BE0D1990002FA79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DCF62C82BE0D1990002FA79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCF62D32BE0E5D30002FA79 /* Tab1FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1FirstViewController.swift; sourceTree = "<group>"; };
+		7DCF62D52BE0E64F0002FA79 /* Tab2FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2FirstViewController.swift; sourceTree = "<group>"; };
+		7DCF62D72BE0E68D0002FA79 /* Tab2SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2SecondViewController.swift; sourceTree = "<group>"; };
+		7DCF62D92BE0E6ED0002FA79 /* Tab3FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3FirstViewController.swift; sourceTree = "<group>"; };
+		7DCF62DB2BE0E7260002FA79 /* Tab3SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3SecondViewController.swift; sourceTree = "<group>"; };
+		7DCF62DD2BE0E7750002FA79 /* Tab3ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ThirdViewController.swift; sourceTree = "<group>"; };
+		7DCF62DF2BE0E7C10002FA79 /* Tab3FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3FourthViewController.swift; sourceTree = "<group>"; };
+		7DCF62E12BE0E8080002FA79 /* Tab3FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3FifthViewController.swift; sourceTree = "<group>"; };
+		7DCF62E32BE0E8490002FA79 /* Tab4FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4FirstViewController.swift; sourceTree = "<group>"; };
+		7DCF62E52BE0E8770002FA79 /* Tab4SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4SecondViewController.swift; sourceTree = "<group>"; };
+		7DCF62E72BE0E8A50002FA79 /* Tab4ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4ThirdViewController.swift; sourceTree = "<group>"; };
+		7DCF62E92BE0E8D60002FA79 /* Tab4FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4FourthViewController.swift; sourceTree = "<group>"; };
+		7DCF62EB2BE0E90D0002FA79 /* Tab4FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4FifthViewController.swift; sourceTree = "<group>"; };
+		7DCF62ED2BE0F00B0002FA79 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7DCF62F02BE22CF30002FA79 /* UsernameContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameContainer.swift; sourceTree = "<group>"; };
+		7DCF62F32BE22F420002FA79 /* Tab3FirstViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab3FirstViewController+Extension.swift"; sourceTree = "<group>"; };
+		7DCF62F52BE22F8D0002FA79 /* Tab3SecondViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab3SecondViewController+Extension.swift"; sourceTree = "<group>"; };
+		7DCF62F72BE22FDB0002FA79 /* Tab3ThirdViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab3ThirdViewController+Extension.swift"; sourceTree = "<group>"; };
+		7DCF62F92BE230130002FA79 /* Tab3FourthViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab3FourthViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,89 @@
 		7DCF62B92BE0D1980002FA79 /* HWL9 */ = {
 			isa = PBXGroup;
 			children = (
+				7DCF62F22BE22EF90002FA79 /* Extensions */,
+				7DCF62EF2BE22CDC0002FA79 /* Classes */,
+				7DCF62CE2BE0E5590002FA79 /* VC */,
 				7DCF62BA2BE0D1980002FA79 /* AppDelegate.swift */,
 				7DCF62BC2BE0D1980002FA79 /* SceneDelegate.swift */,
-				7DCF62BE2BE0D1980002FA79 /* ViewController.swift */,
 				7DCF62C02BE0D1980002FA79 /* Main.storyboard */,
 				7DCF62C32BE0D1990002FA79 /* Assets.xcassets */,
 				7DCF62C52BE0D1990002FA79 /* LaunchScreen.storyboard */,
 				7DCF62C82BE0D1990002FA79 /* Info.plist */,
 			);
 			path = HWL9;
+			sourceTree = "<group>";
+		};
+		7DCF62CE2BE0E5590002FA79 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62CF2BE0E5660002FA79 /* Tab1 */,
+				7DCF62D02BE0E57E0002FA79 /* Tab2 */,
+				7DCF62D12BE0E58E0002FA79 /* Tab3 */,
+				7DCF62D22BE0E5970002FA79 /* Tab4 */,
+				7DCF62ED2BE0F00B0002FA79 /* TabBarController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7DCF62CF2BE0E5660002FA79 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62D32BE0E5D30002FA79 /* Tab1FirstViewController.swift */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		7DCF62D02BE0E57E0002FA79 /* Tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62D52BE0E64F0002FA79 /* Tab2FirstViewController.swift */,
+				7DCF62D72BE0E68D0002FA79 /* Tab2SecondViewController.swift */,
+			);
+			path = Tab2;
+			sourceTree = "<group>";
+		};
+		7DCF62D12BE0E58E0002FA79 /* Tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62D92BE0E6ED0002FA79 /* Tab3FirstViewController.swift */,
+				7DCF62DB2BE0E7260002FA79 /* Tab3SecondViewController.swift */,
+				7DCF62DD2BE0E7750002FA79 /* Tab3ThirdViewController.swift */,
+				7DCF62DF2BE0E7C10002FA79 /* Tab3FourthViewController.swift */,
+				7DCF62E12BE0E8080002FA79 /* Tab3FifthViewController.swift */,
+			);
+			path = Tab3;
+			sourceTree = "<group>";
+		};
+		7DCF62D22BE0E5970002FA79 /* Tab4 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62E32BE0E8490002FA79 /* Tab4FirstViewController.swift */,
+				7DCF62E52BE0E8770002FA79 /* Tab4SecondViewController.swift */,
+				7DCF62E72BE0E8A50002FA79 /* Tab4ThirdViewController.swift */,
+				7DCF62E92BE0E8D60002FA79 /* Tab4FourthViewController.swift */,
+				7DCF62EB2BE0E90D0002FA79 /* Tab4FifthViewController.swift */,
+			);
+			path = Tab4;
+			sourceTree = "<group>";
+		};
+		7DCF62EF2BE22CDC0002FA79 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62F02BE22CF30002FA79 /* UsernameContainer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DCF62F22BE22EF90002FA79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DCF62F32BE22F420002FA79 /* Tab3FirstViewController+Extension.swift */,
+				7DCF62F52BE22F8D0002FA79 /* Tab3SecondViewController+Extension.swift */,
+				7DCF62F72BE22FDB0002FA79 /* Tab3ThirdViewController+Extension.swift */,
+				7DCF62F92BE230130002FA79 /* Tab3FourthViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +248,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DCF62BF2BE0D1980002FA79 /* ViewController.swift in Sources */,
+				7DCF62DE2BE0E7750002FA79 /* Tab3ThirdViewController.swift in Sources */,
+				7DCF62EE2BE0F00B0002FA79 /* TabBarController.swift in Sources */,
+				7DCF62D82BE0E68D0002FA79 /* Tab2SecondViewController.swift in Sources */,
+				7DCF62EC2BE0E90D0002FA79 /* Tab4FifthViewController.swift in Sources */,
+				7DCF62F12BE22CF30002FA79 /* UsernameContainer.swift in Sources */,
+				7DCF62E82BE0E8A50002FA79 /* Tab4ThirdViewController.swift in Sources */,
+				7DCF62EA2BE0E8D60002FA79 /* Tab4FourthViewController.swift in Sources */,
+				7DCF62E62BE0E8780002FA79 /* Tab4SecondViewController.swift in Sources */,
 				7DCF62BB2BE0D1980002FA79 /* AppDelegate.swift in Sources */,
+				7DCF62F42BE22F420002FA79 /* Tab3FirstViewController+Extension.swift in Sources */,
+				7DCF62F82BE22FDB0002FA79 /* Tab3ThirdViewController+Extension.swift in Sources */,
+				7DCF62DA2BE0E6ED0002FA79 /* Tab3FirstViewController.swift in Sources */,
 				7DCF62BD2BE0D1980002FA79 /* SceneDelegate.swift in Sources */,
+				7DCF62E42BE0E8490002FA79 /* Tab4FirstViewController.swift in Sources */,
+				7DCF62D42BE0E5D30002FA79 /* Tab1FirstViewController.swift in Sources */,
+				7DCF62DC2BE0E7260002FA79 /* Tab3SecondViewController.swift in Sources */,
+				7DCF62FA2BE230130002FA79 /* Tab3FourthViewController+Extension.swift in Sources */,
+				7DCF62F62BE22F8D0002FA79 /* Tab3SecondViewController+Extension.swift in Sources */,
+				7DCF62E02BE0E7C10002FA79 /* Tab3FourthViewController.swift in Sources */,
+				7DCF62E22BE0E8080002FA79 /* Tab3FifthViewController.swift in Sources */,
+				7DCF62D62BE0E64F0002FA79 /* Tab2FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

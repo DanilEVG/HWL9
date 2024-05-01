@@ -9,21 +9,21 @@ import UIKit
 
 class Tab4FirstViewController: UIViewController {
 
+    @IBOutlet weak var tab4FirstScreenTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab4FirstScreenNextTapped(_ sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Tab4SecondViewController") as?  Tab4SecondViewController else {return}
+        nextVC.textForTextField = tab4FirstScreenTextField.text ?? ""
+        nextVC.usernameChanged = {[weak self] newValue in
+            self?.tab4FirstScreenTextField.text = newValue
+        }
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    */
+    
 
 }

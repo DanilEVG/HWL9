@@ -6,3 +6,9 @@
 //
 
 import Foundation
+extension Tab3FourthViewController: Tab3FifthViewControllerDelegate {
+    func usernameHasBeenUpdated(to username: String) {
+        delegate?.usernameHasBeenUpdated(to: username)
+        
+    }
+}

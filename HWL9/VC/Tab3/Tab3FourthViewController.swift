@@ -7,8 +7,13 @@
 
 import UIKit
 
-class Tab3FourthViewController: UIViewController {
+protocol Tab3FourthViewControllerDelegate: AnyObject {
+    func usernameHasBeenUpdated(to username: String)
+}
 
+class Tab3FourthViewController: UIViewController {
+    var textForTextField = ""
+    weak var delegate: Tab3FourthViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +21,14 @@ class Tab3FourthViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tab3FourthScreenNextTapped(_ sender: UIButton) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Tab3FifthViewController") as?  Tab3FifthViewController else {return}
+        nextVC.textForTextField = textForTextField
+        nextVC.delegate = self
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    */
-
+    
 }
+
+
