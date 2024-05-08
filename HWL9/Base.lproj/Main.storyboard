@@ -49,23 +49,6 @@
             </objects>
             <point key="canvasLocation" x="772" y="1424"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="K0n-ti-abo">
-            <objects>
-                <navigationController id="pDQ-ve-rcf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="6sy-Vh-5HS"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EyG-Ch-lZe">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="KTj-Fs-bmR" kind="relationship" relationship="rootViewController" id="ESa-5x-03Q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dIe-xq-Vpu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1584" y="737"/>
-        </scene>
         <!--Tab2 Second View Controller-->
         <scene sceneID="gkL-ws-6GD">
             <objects>
@@ -105,37 +88,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWT-iP-3eQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-764" y="2099"/>
-        </scene>
-        <!--Tab1 First View Controller-->
-        <scene sceneID="Lmf-3x-HA5">
-            <objects>
-                <viewController id="KTj-Fs-bmR" customClass="Tab1FirstViewController" customModule="HWL9" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="27G-SP-W5R">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBI-Sr-t7E">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="qjA-6g-a18"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                        <constraints>
-                            <constraint firstItem="IBI-Sr-t7E" firstAttribute="centerY" secondItem="27G-SP-W5R" secondAttribute="centerY" id="2RO-v9-tMG"/>
-                            <constraint firstItem="IBI-Sr-t7E" firstAttribute="centerX" secondItem="27G-SP-W5R" secondAttribute="centerX" id="43S-hD-A6F"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="AV1-Ks-5rb"/>
-                    <connections>
-                        <outlet property="tab1FirstScreenLabel" destination="IBI-Sr-t7E" id="YKz-Ry-6y1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uY5-2d-tfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1585" y="1424"/>
         </scene>
         <!--Tab2 First View Controller-->
         <scene sceneID="uab-wV-0O2">
@@ -465,6 +417,16 @@
             </objects>
             <point key="canvasLocation" x="772" y="2099"/>
         </scene>
+        <!--FirstTab-->
+        <scene sceneID="bQu-ET-r53">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstTab" id="DQf-h6-dKb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="HSK-cp-fuj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qq7-oe-nqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1431" y="424"/>
+        </scene>
         <!--Item 2-->
         <scene sceneID="RFM-Tp-mB5">
             <objects>
@@ -509,10 +471,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pDQ-ve-rcf" kind="relationship" relationship="viewControllers" id="GNI-Fx-03S"/>
                         <segue destination="LSh-zY-dLE" kind="relationship" relationship="viewControllers" id="vlZ-Pe-2eh"/>
                         <segue destination="rRC-fX-aJV" kind="relationship" relationship="viewControllers" id="dXH-dK-WTe"/>
                         <segue destination="91V-O5-wDH" kind="relationship" relationship="viewControllers" id="8PL-Y5-SWb"/>
+                        <segue destination="DQf-h6-dKb" kind="relationship" relationship="viewControllers" id="XjZ-OS-Frj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ipf-4I-Kuj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -542,9 +504,6 @@
     </scenes>
     <resources>
         <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
